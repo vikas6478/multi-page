@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(3, 66, 13, 0.996);
+}
+
+.watch img {
+  width: 100px;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+.watch .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.watch .navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 11px;
+  margin-right: 300px;
+  font-family: "Lexend", sans-serif;
+}
+.watch .navbar ul a {
+  color: rgb(245, 242, 242);
+  text-decoration: none;
+}
+.watch .navbar ul a:hover {
+  color: rgb(171, 127, 4);
+  /* border-bottom: 3px solid; */
+}
+.watch .icon {
+  margin-right: 50px;
+}
+.watch .icon i {
+  color: white;
+  letter-spacing: 25px;
+  font-size: 10px;
+}
+.watch .icon i:hover {
+  color: rgb(171, 127, 4);
+}
+
+.watch_one {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  margin: 5px 80px 0px 80px;
+}
+.watch_one img {
+  width: 100%;
+}
+
+.new_product {
+  font-size: 20px;
+  color: white;
+  margin-left: 90px;
+  margin-top: 20px;
+  font-family: "Dosis", sans-serif;
+}
+.new_product hr {
+  margin-left: 1px;
+  margin-bottom: 20px;
+}
+
+.column {
+  padding: 10px;
+  text-align: center;
+}
+.column h1 {
+  font-size: 12px;
+  color: rgb(86, 85, 85);
+  font-family: "Dosis", sans-serif;
+}
+.column h2 {
+  font-size: 15px;
+  color: rgb(86, 85, 85);
+  font-family: "Dosis", sans-serif;
+  margin-top: 5px;
+}
+.column h3 {
+  font-size: 15px;
+  color: rgb(2, 145, 16);
+  font-family: "Dosis", sans-serif;
+  margin-top: 0px;
+}
+.column h4 {
+  font-size: 15px;
+  color: rgb(232, 239, 232);
+  font-family: "Dosis", sans-serif;
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+.column h4 i {
+  color: rgb(2, 145, 16);
+  letter-spacing: 8px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-top: 30px;
+  margin-top: 40px;
+}
+.logo .acro_logo1 {
+  max-width: 90px;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px;
+  background-color: black;
+  margin-top: 0px;
+}
+.blog .inform {
+  text-align: center;
+}
+.blog .inform1 {
+  border-right: 1px solid wheat;
+}
+.blog .help {
+  color: rgb(171, 127, 4);
+  font-size: 18px;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 10px;
+}
+.blog h2 {
+  color: rgba(255, 255, 255, 0.584);
+  font-size: 12px;
+  margin: 5px;
+  font-family: "Dosis", sans-serif;
+}
+.blog h2 i {
+  margin-right: 4px;
+}
+.blog h3 i {
+  border: 1px solid rgb(171, 127, 4);
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  margin: 4px;
+  background-color: black;
+}
+.blog h3 i:hover {
+  background-color: rgb(171, 127, 4);
+  border: 1px solid white;
+}
+.blog h4 {
+  display: block;
+}
+.blog h4 img {
+  padding: 4px;
+  width: 60px;
+}
+
+.ut {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.584);
+  padding-bottom: 20px;
+  font-size: 6px;
+  font-family: "Dosis", sans-serif;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.656);
+  font-size: 7px;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  font-family: "Dosis", sans-serif;
+}
+.copyright span {
+  color: rgb(171, 127, 4);
+}
+
+#click {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  label {
+    display: block;
+    margin-left: 1px;
+    color: azure;
+  }
+  label i {
+    margin-right: 40px;
+  }
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.416);
+    width: 100%;
+    text-align: end;
+    display: none;
+  }
+  li {
+    margin-right: 30px;
+  }
+  #click:checked ~ nav ul {
+    display: block;
+    display: none;
+  }
+  #click {
+    display: none;
+  }
+  .icon {
+    margin-left: auto;
+  }
+  nav {
+    width: 10px;
+  }
+  .watch_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 425px) {
+  label {
+    display: block;
+    margin-left: 1px;
+    color: azure;
+  }
+  label i {
+    margin-right: 40px;
+  }
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.416);
+    width: 100%;
+    text-align: end;
+    display: none;
+  }
+  li {
+    margin-right: 30px;
+  }
+  #click:checked ~ nav ul {
+    display: block;
+    display: none;
+  }
+  #click {
+    display: none;
+  }
+  .icon {
+    display: none;
+  }
+  .watch_one {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+  .blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px 0 10px;
+  }
+}/*# sourceMappingURL=bag.css.map */
