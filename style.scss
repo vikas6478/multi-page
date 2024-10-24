@@ -651,3 +651,65 @@ body {
     }
  }
 
+ // MOBILE VIEW SECONDS
+@media screen and (max-width: 375px){
+    label {
+        display: block;
+        margin-left: 1px;
+        color: azure;
+        i {
+            margin-right: 40px;
+        }
+    }
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.416);
+        width: 100%;
+        text-align: end;
+        display: none;
+    }
+    li {
+        margin-right: 30px;
+
+    }
+    #click:checked ~ nav ul {
+        display: block ;
+        display: none;
+    }
+    #click {
+        display: none;
+    } 
+    .icon {
+     display: none;
+    }
+    .watch_one {
+     display: grid;
+     grid-template-columns: 1fr;
+     margin: 10px;
+    }
+    .watch_two {
+     display: grid;
+     grid-template-columns: 1fr;
+     margin: 10px;
+    }
+    .watch_three {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+    .fourphotos {
+     display: grid;
+     grid-template-columns: 1fr;
+     margin: 30px;
+     gap: 20px;
+    }
+    .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 0 10px;
+    }
+ }
+

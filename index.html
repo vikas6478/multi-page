@@ -12,6 +12,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <title>Acro.com</title>
+    <script src="style.js"></script>
+    <style>
+    #img2 {
+    overflow: hidden;
+    }
+    </style>
 </head>
 <body>
     <section id="home">
@@ -50,29 +56,37 @@
      <section id="pages">
     <h1 class="new_product">New Products<hr></h1>
     <div class="watch_one">
-        <div class="column column1">
-            <img src="image/M37.jpg" alt="">
+        <div class="column column1" >
+          <div id="img2">
+            <img id="image1" onmouseover="zoomin(1);" onmouseleave="initial(1);" src="image/M37.jpg" alt="">
+          </div>
             <h1>Luxury Sport</h1>
             <h2>M37 Uniform Wares</h2>
             <h3>_______</h3>
             <h4>$78.00</h4>
         </div>
         <div class="column column2">
-            <img src="image/Roger.jpg" alt="">
+          <div id="img2">
+            <img id="image2" onmouseover="zoomin(2);" onmouseleave="initial(2);" src="image/Roger.jpg" alt="">
+          </div>
             <h1>Luxury Sport</h1>
             <h2>Roger Dubuis</h2>
             <h3>_______</h3>
             <h4>$104.00</h4>
         </div>
         <div class="column column3">
-            <img src="image/Swiss.jpg" alt="">
+          <div id="img2">
+            <img id="image3" onmouseover="zoomin(3);" onmouseleave="initial(3);" src="image/Swiss.jpg" alt="">
+          </div>
             <h1>Luxury Sport</h1>
             <h2>Swiss Watch</h2>
             <h3>_______</h3>
             <h4>$98.00</h4>
         </div>
         <div class="column column4">
-            <img src="image/classy.jpg" alt="">
+          <div id="img2">
+            <img id="image4" onmouseover="zoomin(4);" onmouseleave="initial(4);" src="image/classy.jpg" alt="">
+          </div>
             <h1>Luxury Sport</h1>
             <h2>Classy Numeral</h2>
             <h3>_______</h3>
@@ -227,7 +241,7 @@
           <h2>Contect Us</h2>
         </div>
         <div class="inform">
-            <h1 class="help">TNSTAGRAM FEED</h1>
+            <h1 class="help">INSTAGRAM FEED</h1>
             <h2>Our Instagram Gallery</h2>
             <h4>
                 <img src="image/blog01.jpg" alt="">
