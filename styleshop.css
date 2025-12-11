@@ -113,6 +113,10 @@ body {
   border-radius: 10px;
   border: 2px solid transparent;
   box-shadow: 10px 7px 10px 3px black;
+  transition: transform 0.3s ease;
+}
+.watch_one img:hover {
+  transform: scale(1.1);
 }
 
 .new_product {

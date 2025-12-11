@@ -59,6 +59,7 @@ body {
 }
 .watch_one img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .new_product {
